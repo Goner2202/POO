@@ -4,7 +4,7 @@ from tkinter.messagebox import *
 class Help():
 
     def about(root):
-        showinfo(title="About", message="Hello, this is a text editor made by Insidious using Python")
+        showinfo(title="About", message="This is a text editor made by GONE.dust using Python     U can find other projects here: github.com/Goner2202")
     
 def main(root, text, menubar):
 
