@@ -196,11 +196,11 @@ button_bin = tk.Button(master=frame, text="bin", padx=15, font=myFont, bg="light
 button_bin.grid(row=6, column=0, pady=10, padx=10)
 
 button_oct = tk.Button(master=frame, text="oct", padx=15, font=myFont, bg="lightgrey", fg="black",
-                     pady=5, width=2, command=decimal_2_bin)
+                     pady=5, width=2, command=decimal_2_oct)
 button_oct.grid(row=6, column=1, pady=10, padx=10)
 
 button_hex = tk.Button(master=frame, text="hex", padx=15, font=myFont, bg="lightgrey", fg="black",
-                     pady=5, width=2, command=decimal_2_bin)
+                     pady=5, width=2, command=decimal_2_hex)
 button_hex.grid(row=6, column=2, pady=10, padx=10)
 
 button_sqrt = tk.Button(master=frame, text="sqrt", padx=15, font=myFont, bg="lightgrey", fg="black",
@@ -216,7 +216,7 @@ button_clear = tk.Button(master=frame, text="C", padx=15, font=myFont, bg="light
 button_clear.grid(row=7, column=1, pady=10, padx=10)
 
 button_equal = tk.Button(master=frame, text="=", padx=15, font=myFont, bg="lightgrey", fg="black",
-                     pady=5, width=8, command=decimal_2_bin)
+                     pady=5, width=8, command=equal)
 button_equal.grid(row=7, column=2, columnspan=2, pady=10, padx=10)
  
 window.mainloop()
