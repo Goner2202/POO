@@ -29,7 +29,7 @@ class AboutDialog(QDialog):
         layout.addWidget(title)
 
         logo = QLabel()
-        logo_path = str(Path(__file__).parent / "ma-icon-128.png")
+        logo_path = str(Path(__file__).parent / "GONEdust_128.jpg")
         logo.setPixmap(QPixmap(logo_path))
         layout.addWidget(logo)
 
@@ -135,7 +135,7 @@ class MainWindow(QMainWindow):
 
         about_path = str(Path(__file__).parent / "question.png")
         about_action = QAction(QIcon(about_path), "About GONE.dust's Web Browser", self)
-        about_action.setStatusTip("Find out more about GONE.dust's Web Browser")  # Hungry!
+        about_action.setStatusTip("Find out more about GONE.dust's Web Browser") 
         about_action.triggered.connect(self.about)
         help_menu.addAction(about_action)
 
@@ -151,7 +151,7 @@ class MainWindow(QMainWindow):
         self.show()
 
         self.setWindowTitle("GONE.dust's Web Browser")
-        window_icon_path = str(Path(__file__).parent / "ma-icon-64.png")
+        window_icon_path = str(Path(__file__).parent / "GONEdust_64.jpg")
         self.setWindowIcon(QIcon(window_icon_path))
 
     def add_new_tab(self, qurl=None, label="Blank"):
